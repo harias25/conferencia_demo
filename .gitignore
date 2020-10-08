@@ -59,6 +59,9 @@ artifacts/
 # StyleCop
 StyleCopReport.xml
 
+# SonarQube
+.sonarqube
+
 # Files built by Visual Studio
 *_i.c
 *_p.c

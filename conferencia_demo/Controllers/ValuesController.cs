@@ -12,9 +12,11 @@ namespace conferencia_demo.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<string>> Get(int val1, int val2)
         {
-            return new string[] { "value1", "value2" };
+            Operaciones op = new Operaciones();
+            int resultado = op.multiplicacion(op.multiplicacion(op.suma(op.suma(val1,val2),op.suma(val1,val2)),op.suma(op.suma(val1,val2),op.suma(val1,val2))),op.suma(op.suma(val1,val2),op.suma(val1,val2)))
+            return new string[] { resultado.ToString() };
         }
 
         // GET api/values/5
