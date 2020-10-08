@@ -1,0 +1,7 @@
+version: '3.2'
+services:
+  net-core-api:
+    container_name: net-core-api
+    build: '.'
+    ports:
+      - "8000:80"
